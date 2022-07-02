@@ -9,6 +9,7 @@ public class Costomer {
 	private String cadds;
 	private long mobileNo;
 	
+	//Constructor
 	public Costomer(int cno, String cname, float billAmt) {
 		System.out.println("Costomer :: 3-param constructor");
 		this.cno = cno;
