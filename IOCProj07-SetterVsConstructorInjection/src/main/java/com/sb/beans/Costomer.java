@@ -1,5 +1,5 @@
 package com.sb.beans;
-
+//Spring bean class
 public class Costomer {
 	//cno, cname, billAmt are mandatory properties
 	private int cno;

@@ -1,5 +1,5 @@
 package com.sb.beans;
-
+//Spring bean class
 public class Student {
 	//let us assume bean properties are optional to provide for defendency injection
 	//setter injection is good when bean properties are optional to participate

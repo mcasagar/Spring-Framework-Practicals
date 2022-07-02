@@ -1,5 +1,5 @@
 package com.sb.beans;
-
+//Spring bean class
 public class Employee1 {
 	//all bean properties are mandatory to participates in injection then go for constructor injection
 	//constructor is good when all bean properties are mandatory to participate
