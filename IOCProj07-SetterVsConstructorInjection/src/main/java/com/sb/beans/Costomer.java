@@ -1,3 +1,4 @@
+//Setter Injection
 package com.sb.beans;
 //Spring bean class
 public class Costomer {
