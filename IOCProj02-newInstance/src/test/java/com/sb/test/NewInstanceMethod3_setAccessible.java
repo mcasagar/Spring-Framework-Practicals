@@ -1,3 +1,4 @@
+//NewInstanceMethod
 package com.sb.test;
 
 import java.lang.reflect.Constructor;
