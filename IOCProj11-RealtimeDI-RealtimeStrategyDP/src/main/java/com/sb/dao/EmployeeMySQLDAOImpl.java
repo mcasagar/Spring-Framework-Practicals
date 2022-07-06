@@ -8,20 +8,20 @@ import javax.sql.DataSource;
 
 import com.sb.bo.EmployeeBO;
 
-public class EmployeeDAOImpl implements IEmployeeDAO {
-	private static final String EMP_INSERT_QUERY = "INSERT INTO REALTIMEDI_SPRING_EMPLOYEE VALUES(SP_ENO_SEQ.NEXTVAL,?,?,?,?,?)";
+public class EmployeeMySQLDAOImpl implements IEmployeeDAO {
+	private static final String EMP_INSERT_QUERY = "INSERT INTO REALTIMEDI_SPRING_EMPLOYEE(ENAME,DESG,BASICSALARY,GROSSSALARY,NETSALARY) VALUES(?,?,?,?,?)";
 	//HAS - A Properties
 	private DataSource ds;
 
 	// alt + shift + o
-	public EmployeeDAOImpl(DataSource ds) {
-		System.out.println("EmployeeDAOImpl :: 1-param constructor");
+	public EmployeeMySQLDAOImpl(DataSource ds) {
+		System.out.println("EmployeeMySQLDAOImpl :: 1-param constructor");
 		this.ds = ds;
 	}
 
 	@Override
 	public int insertEmployee(EmployeeBO bo) throws Exception {
-		System.out.println("EmployeeDAOImpl.insertEmployee()");
+		System.out.println("EmployeeMySQLDAOImpl.insertEmployee()");
 		Connection con = null;
 		PreparedStatement ps = null;
 		int result=0;
