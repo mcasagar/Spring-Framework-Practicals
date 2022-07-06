@@ -1,3 +1,4 @@
+//main type
 package com.sb.comp;
 
 abstract public class Car {
