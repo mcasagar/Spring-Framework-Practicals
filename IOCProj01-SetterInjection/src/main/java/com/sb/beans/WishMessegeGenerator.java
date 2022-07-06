@@ -1,3 +1,4 @@
+//WishMessageGenerator.java
 package com.sb.beans;
 
 import java.util.Date;
