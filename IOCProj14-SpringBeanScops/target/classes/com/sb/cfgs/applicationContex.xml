@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <!-- -Spring bean configuration  -->
+        <bean id="dt" class="java.util.Date"/>
+       	
+       	<bean id="wmg" class="com.sb.beans.WishMessegeGenerator" scope="singleton">
+       		<property name="date" ref="dt"/> 
+       	</bean>
+       	<bean id="wmg1" class="com.sb.beans.WishMessegeGenerator" scope="singleton">
+       		<property name="date" ref="dt"/> 
+       	</bean>
+       	
+<!--        	<bean id="p1" class="com.sb.singleton.Printer"/>
+       	<bean id="p" class="com.sb.singleton.Printer"/> -->
+       	<bean id="p1" class="com.sb.singleton.Printer" factory-method="getInstance"/>
+       	<bean id="p"   class="com.sb.singleton.Printer" factory-method="getInstance"/>
+       	
+</beans>        
