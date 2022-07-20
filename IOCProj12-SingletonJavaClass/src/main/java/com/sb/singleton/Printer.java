@@ -12,9 +12,8 @@ public class Printer {
 	public static Printer getInstance() {
 		 if(INSTANCE == null)
 			 //singleton logic
-			 return INSTANCE = new Printer();
-		 else
-			 return INSTANCE;
+			 INSTANCE = new Printer();
+		 return INSTANCE;
 	}
 	
 	//b.method
